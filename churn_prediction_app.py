@@ -13,6 +13,8 @@ def load_model_and_encoders():
 
 model, encoders, feature_names = load_model_and_encoders()
 
+
+
 # Hide anchor link for all headers
 st.markdown(
     """
@@ -24,6 +26,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 
