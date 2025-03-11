@@ -5,9 +5,9 @@ import pickle
 # Load the saved model and encoders
 # @st.cache(allow_output_mutation=True)
 def load_model_and_encoders():
-    with open("stremlit_check\customer_churn_model.pkl", "rb") as f:
+    with open("customer_churn_model.pkl", "rb") as f:
         model_data = pickle.load(f)
-    with open("stremlit_check\encoders.pkl", "rb") as f:
+    with open("encoders.pkl", "rb") as f:
         encoders = pickle.load(f)
     return model_data["model"], encoders, model_data["features_names"]
 
